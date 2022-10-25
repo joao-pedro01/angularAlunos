@@ -1,4 +1,4 @@
-<h2>{{aluno.name}} Details</h2>
+<!-- <h2>{{aluno.name}} Details</h2>
 <div><span>id: </span>{{aluno.id}}</div>
 <div><span>name: </span>{{aluno.name}}</div>
 <h2>{{aluno.name | uppercase}} Aluno {{aluno.id}}</h2>
@@ -8,4 +8,18 @@
 <div>
   <label for="name">Aluno nome: </label>
   <input id="name" [(ngModel)]="aluno.name" placeholder="name">
-</div>
+</div> -->
+
+  <table>
+    <td>Id</td>
+    <td>Nome</td>
+    <td>Curso</td>
+    <td>Nota</td>
+    <tr *ngFor="let aluno of alunos">
+      <td>{{aluno.id}}</td>
+      <td>{{aluno.nome}}</td>
+      <td>{{aluno.curso}}</td>
+      <td>{{aluno.nota}}</td>
+    </tr>
+  </table>
+

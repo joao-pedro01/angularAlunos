@@ -1,4 +1,6 @@
 export interface Aluno {
   id: number;
-  name: string;
+  nome: string;
+  curso: string;
+  nota: number;
 }

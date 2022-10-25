@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Aluno } from '../../aluno';
+import { ALUNOS } from '../../mock-alunos';
 
 @Component({
   selector: 'app-alunos',
@@ -7,12 +7,10 @@ import { Aluno } from '../../aluno';
   styleUrls: ['./alunos.component.css']
 })
 export class AlunosComponent implements OnInit {
-  aluno: Aluno = {
-    id: 1,
-    name: 'João Pedro'
-  };
+
 
   constructor() { }
+  alunos = ALUNOS;
 
   ngOnInit(): void {
   }
